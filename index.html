@@ -1,1 +1,47 @@
-<h1>OH YEAH, MO FO!!!</h1>
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>Text Adventure Test</h1>
+    
+        <h3>Prologue</h3>
+        <p>Please name your character: <input type="text" id="myText" value=""></p>
+        
+        <button onclick="nameSetter()">Submit</button>
+        <p id="prologue"></p>
+  
+
+    </body>    
+    
+    <!--Javascript can be written here!-->
+    <script>
+
+        function nameSetter() {
+            var heroName = document.getElementById("myText").value;
+            document.getElementById("prologue").innerHTML = "After taking to the seas, Count " + heroName + " kept a detailed Captain's log.<br>Only bits and pieces have turned up over the years.";
+        }
+
+        /*function gameMenu() {
+            System.out.println("Which section would you like to examine?");
+            System.out.println("\t1) Logan's story");
+            System.out.println("\t2) Benja's story");
+            System.out.println("\t3) Spencer's story");
+
+            int sectionChoice = input.nextInt();
+
+            if (sectionChoice == 1) {
+                logan();
+            }
+            if (sectionChoice == 2) {
+                benja();
+            }
+            if (sectionChoice == 3) {
+                spencer();
+            }
+	   }*/
+        //sleep function?
+        
+    </script>
+
+
+</html>
