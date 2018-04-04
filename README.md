@@ -1,3 +1,3 @@
 # Benjalomen.github.io
 
-test description
+Website to test the publishing of text adventures
