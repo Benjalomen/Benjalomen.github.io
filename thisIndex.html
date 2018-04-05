@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>Vampirate Diaries</h1>
+    
+        <p>Please name your character: <input type="text" id="myText" value=""></p>
+        <button onclick="nameYourHero()">Submit</button>
+        
+        <p id="prologue"></p>
+        <p id="menu"></p>
+        <p id="sectionStory"></p>
+        <p id="firstChoice"></p>
+
+        
+    </body>    
+    
+    <!--Javascript can be written here!-->
+    <script>
+
+        function nameYourHero() {
+            var heroName = document.getElementById("myText").value;
+            document.getElementById("prologue").innerHTML = "After taking to the seas, Count " + heroName + " kept a detailed Captain's log.<br>Only bits and pieces have turned up over the years.<br><br>" + "<button onclick=\"gameMenu()\">Continue...</button>";
+        }
+
+        function gameMenu() {
+            document.getElementById("menu").innerHTML = "Which section would you like to examine?<br>" +
+                "<button class=\"btn1\" onclick=\"logan()\">Logan's story</button><br>" + 
+                "<button onclick=\"benja()\">Benja's story</button><br>" +
+                "<button onclick=\"spencer()\">Spencer's story</button><br>";
+        }
+        
+        function logan() {
+            document.getElementById("sectionStory").innerHTML = ("<br>The date on this entry has been almost entirely eroded by time and weather. <br>You can only make out the year. It was 1878. The log reads:<br><br>" +
+            "Fighting strong head winds and despite the loss of our noble cockswain <br>we at last moored in Buttsmouth late this morning. Regrettably most of <br>our cargo was found to be spoiled. We were forced to collect our remunerations <br>using unfavorable methods.<br><br>" + 
+                "<button onclick=\"logan11()\">Read about cockswain</button><br>" +
+                "<button onclick=\"logan11()\">Read about cargo</button><br>" +
+                "<button onclick=\"logan11()\">Read about unfavorable methods</button><br>" +
+                "<button onclick=\"logan11()\">Stop reading</button><br>");
+        }
+        
+                    
+        function logan11() {
+            document.getElementById("firstChoice").innerHTML = ("<br>In a lamentable turn of events our cockswain found his member entangled in the rigging.<br>A horrendously well timed gust caught the sails, drawing the ropes taught and severing our shipmates genetalia. <br>The irony was not lost on us. We've erected our most phallic plank at the bow in memoriam.");
+        }
+        
+        function benja() {
+            document.getElementById("sectionStory").innerHTML = ("<br>what's good?");
+        }
+        
+       function spencer() {
+            document.getElementById("sectionStory").innerHTML = ("<br>genius!<br>");
+        }
+        
+    </script>
+
+
+</html>
