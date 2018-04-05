@@ -1,3 +1,3 @@
-# Benjalomen.github.io
+# VampirateDiaries.github.io
 
 Website to test the publishing of text adventures
